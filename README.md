@@ -1,41 +1,48 @@
 # Milos Mirkovic
 
 Solidity / Smart Contract Engineer ⚙️  
-Protocol engineering: EVM → Security → DeFi  
+Focused on protocol engineering: EVM internals → security → DeFi systems  
 
 ---
 
-## Protocol Engineering Journey
+## Current Focus
 
-This is a structured path toward building production-ready DeFi protocols.
+Building a DeFi lending protocol from first principles:
 
-Each repository focuses on a core concept required for protocol design.
+- oracle systems (Chainlink + custom RWA oracle)
+- AMM price formation and TWAP
+- lending pools and liquidation mechanics
+- utilization-based interest rate models
+- staking and reward distribution
 
-### EVM Fundamentals
-Understanding how the EVM works at a low level.
-
-### Testing & Verification
-Writing unit, integration, and invariant tests using Foundry.
-
-### Security
-Exploring vulnerabilities:
-- reentrancy
-- access control
-- overflow
-- MEV / front-running
-
-### Oracle Safety
-Designing a safe oracle ingestion layer:
-- staleness checks
-- deviation limits
-- round validation
-- stateful price model
-
-Repo:
+Main repo:  
 https://github.com/MilosMicun/defi-lending-primitives
 
-### DeFi Protocol (in progress)
-Combining all components into a lending protocol.
+---
+
+## Protocol Engineering Approach
+
+Each repository represents a core system component:
+
+### EVM Fundamentals
+Understanding execution at opcode, memory, and storage level.
+
+### Testing & Verification
+Unit, integration, fuzz, and invariant testing using Foundry.
+
+### Security
+Exploring vulnerabilities and defenses:
+- reentrancy  
+- access control  
+- overflow  
+- MEV / front-running  
+
+### Oracle Design
+Safe integration of external data:
+- staleness checks  
+- deviation limits  
+- round validation  
+- stateful price model  
 
 ---
 
@@ -43,6 +50,12 @@ Combining all components into a lending protocol.
 
 Smart contracts are not just code.
 
-They are state systems exposed to adversarial conditions.
+They are:
 
-Each repo represents one part of a larger system.
+- state machines  
+- accounting systems  
+- adversarial environments  
+
+Correctness emerges from:
+
+math + state + time
